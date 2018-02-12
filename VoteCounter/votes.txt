@@ -1,0 +1,9 @@
+Alan Norton-Virus Party-1,Brandon Nobady-Nobady Party-2,Celine Yamakasi-Yamakasi Party-3,Danny The Bitto-Bitto Party-4,Krystian Wieliczka-WieliczkaParty-5,Maczo Zwykly-Zwykly Party-6
+Alan Norton-Virus Party-6,Brandon Nobady-Nobady Party-3,Celine Yamakasi-Yamakasi Party-2,Danny The Bitto-Bitto Party-5,Krystian Wieliczka-WieliczkaParty-1,Maczo Zwykly-Zwykly Party-4
+Alan Norton-Virus Party-4,Brandon Nobady-Nobady Party-6,Celine Yamakasi-Yamakasi Party-3,Danny The Bitto-Bitto Party-2,Krystian Wieliczka-WieliczkaParty-5,Maczo Zwykly-Zwykly Party-1
+Alan Norton-Virus Party-5,Brandon Nobady-Nobady Party-1,Celine Yamakasi-Yamakasi Party-3,Danny The Bitto-Bitto Party-2,Krystian Wieliczka-WieliczkaParty-6,Maczo Zwykly-Zwykly Party-4
+Alan Norton-Virus Party-3,Brandon Nobady-Nobady Party-4,Celine Yamakasi-Yamakasi Party-1,Danny The Bitto-Bitto Party-2,Krystian Wieliczka-WieliczkaParty-5,Maczo Zwykly-Zwykly Party-6
+Alan Norton-Virus Party-2,Brandon Nobady-Nobady Party-4,Celine Yamakasi-Yamakasi Party-3,Danny The Bitto-Bitto Party-1,Krystian Wieliczka-WieliczkaParty-5,Maczo Zwykly-Zwykly Party-6
+Alan Norton-Virus Party-2,Brandon Nobady-Nobady Party-4,Celine Yamakasi-Yamakasi Party-3,Danny The Bitto-Bitto Party-1,Krystian Wieliczka-WieliczkaParty-6,Maczo Zwykly-Zwykly Party-5
+Alan Norton-Virus Party-6,Brandon Nobady-Nobady Party-3,Celine Yamakasi-Yamakasi Party-2,Danny The Bitto-Bitto Party-5,Krystian Wieliczka-WieliczkaParty-1,Maczo Zwykly-Zwykly Party-4
+Alan Norton-Virus Party-6,Brandon Nobady-Nobady Party-3,Celine Yamakasi-Yamakasi Party-2,Danny The Bitto-Bitto Party-5,Krystian Wieliczka-WieliczkaParty-1,Maczo Zwykly-Zwykly Party-4
