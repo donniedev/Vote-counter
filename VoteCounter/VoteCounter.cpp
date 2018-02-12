@@ -1,4 +1,4 @@
-// Daniel Duda CD002008007 Joint DSA & Programming Assignment 2018 VoteCounter
+// Daniel Duda C002008007 Joint DSA & Programming Assignment 2018 VoteCounter
 
 #include "stdafx.h"
 #include <iostream>
