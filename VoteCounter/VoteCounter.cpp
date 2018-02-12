@@ -114,14 +114,15 @@ int main()
 	std::ifstream myfile("votes.txt");
 
 	std::string InputLine;
-	std::string secondSplit[100];  //
-
+	std::string secondSplit[100];  
 	std::string temp;
-	int k = 0;
+	std::string split;
+	//loop variables
+	int k = 0;//
 	int m = 0;
 	int n = 0;
 
-	std::string split;
+	
 	//Handle input
 	if (myfile.is_open())
 	{
@@ -144,10 +145,11 @@ int main()
 
 			for (int i = 0; i < m / 3; i++) {//Candidates size length of  array secondSplit / 3 == how many candidates
 
-				if (k == 0) {
+				if (k == 0) {//create candidates only from first ballot
+							 //secondSplit[n] = candidate name, secondSplit[n+1] = candidate party
 					candidatesV.push_back(Candidate(secondSplit[n], secondSplit[n + 1]));
 				}
-
+				//secondSplit[n] = candidate name, secondSplit[n+2] = candidate preference
 				ballotsV[k].setPreference(secondSplit[n], atoi(secondSplit[n + 2].c_str()));
 				n += 3;
 			}
@@ -161,7 +163,6 @@ int main()
 	{
 		std::cout << "Unable to open file";
 	}
-
 	//end handling input
 	std::cout << '\n';
 
@@ -172,14 +173,14 @@ int main()
 
 			if (j->second == preference) {
 
-				roundMap[j->first] += 1; //to jest jak insert	
+				roundMap[j->first] += 1; //insert or update candidate
 			}
 
 		}//end for auto j 
 	}//end for
 
-	 // chec if candidate did not had any voices and add it to eliminated list
-	for (int i = 0; i < candidatesV.size(); i++) {//candidates size
+	 // check if candidate did not had any voices and add it to eliminated list
+	for (int i = 0; i < candidatesV.size(); i++) {
 
 		std::map<std::string, int>::iterator it;
 		it = roundMap.find(candidatesV[i].getName());
@@ -198,9 +199,8 @@ int main()
 	while (wehaveWinner == false) {
 		std::cout << "Round nr " << roundNumberDisplay + 1 << '\n';
 		printMap(roundMap);
-		// y
+	
 		lowest = findLowest(roundMap);
-		std::cout << "lowest " << lowest << '\n';
 		lowestCount = findLowestCount(roundMap, lowest, lowestNames);
 
 		if (lowestCount > 1) {
@@ -221,10 +221,11 @@ int main()
 		eliminatedCandidates.push_back(nameToEliminate);
 		roundMap.erase(nameToEliminate);
 
-
+		//find candidates who receive voices
 		reciveMap = distribute(ballotsV, 1, nameToEliminate, eliminatedCandidates);
 
-		for (auto j = reciveMap.begin(); j != reciveMap.end(); ++j) {//start auto j
+		//distribute voices
+		for (auto j = reciveMap.begin(); j != reciveMap.end(); ++j) {
 
 			std::map<std::string, int>::iterator it;
 			it = roundMap.find(j->first);
