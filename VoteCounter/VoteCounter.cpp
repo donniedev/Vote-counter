@@ -118,7 +118,7 @@ int main()
 	std::string temp;
 	std::string split;
 	//loop variables
-	int k = 0;//
+	int k = 0;
 	int m = 0;
 	int n = 0;
 
@@ -146,7 +146,8 @@ int main()
 			for (int i = 0; i < m / 3; i++) {//Candidates size length of  array secondSplit / 3 == how many candidates
 
 				if (k == 0) {//create candidates only from first ballot
-							 //secondSplit[n] = candidate name, secondSplit[n+1] = candidate party
+
+					 //secondSplit[n] = candidate name, secondSplit[n+1] = candidate party
 					candidatesV.push_back(Candidate(secondSplit[n], secondSplit[n + 1]));
 				}
 				//secondSplit[n] = candidate name, secondSplit[n+2] = candidate preference
