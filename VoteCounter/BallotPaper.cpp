@@ -18,7 +18,14 @@ void BallotPaper::setPreference(std::string name, int pref)
 }
 
 
-int BallotPaper::getPreference()
+std::string BallotPaper::getPreference(int pref)
 {
-	return 0;
+	std::string temp;
+	for (auto j = ballotMap.begin(); j != ballotMap.end(); ++j) {
+
+		if (j->second == pref) {
+			temp = j->first;
+		}
+	}
+	return temp;
 }

@@ -19,8 +19,7 @@ public:
 
 	void setPreference(std::string, int);
 
-	int getPreference();
-
+	std::string getPreference(int);
 
 };
 

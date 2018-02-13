@@ -111,7 +111,7 @@ int main()
 	std::vector<BallotPaper> ballotsV;
 
 	//input variables
-	std::ifstream myfile("votes.txt");
+	std::ifstream myfile("votes1.txt");
 
 	std::string InputLine;
 	std::string secondSplit[100];  
@@ -170,7 +170,6 @@ int main()
 	for (int i = 0; i < ballotsV.size(); i++) {
 
 		for (auto j = ballotsV[i].ballotMap.begin(); j != ballotsV[i].ballotMap.end(); ++j) {//start auto j
-
 
 			if (j->second == preference) {
 
